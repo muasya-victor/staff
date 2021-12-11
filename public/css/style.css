@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body{
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+nav h4, .pageHeading{
+    color: blue;
+}
+
+
+form div:last-child, .rmbtn{
+    margin-bottom:30px;
+}
+form ,.rmbtn{
+    margin-top: 40px;
+}
+form h3{
+    padding-left: 30px;
+}
+
+form div, .removeFromDb div{
+    padding-left: 20px;
+    /*background-color: red;*/
+}
+
+.removeFromDb{
+    margin: 20px 0 20px 0;
+}
+form div:first-child, form div:last-child{
+    padding-top: 20px;
+}
+
+.btn{
+    margin-left: 40px;
+}
+
+.space{
+    height: 30px;
+    background-color: transparent;
+}
+.foot{
+    overflow-y: hidden;
+    /*height: 200px;*/
+    background-color: #f8f9fa!important;
+
+}
+
+.hide{
+    display: none;
+}
+
+/*about page*/
+.welcome{
+    text-align: left;
+}
+
+.container{
+    text-align: center;
+}
+.container img{
+    width: 90   %;
+    height: 500px;
+    /*border-radius: 10px;*/
+}
+.row{
+    margin: 15px;
+}
+.row img{
+    height: 250px;
+}
+
+.gallery{
+    padding-top: 25px;
+}
+
+/*student page*/
+.card img{
+    height: 200px;
+}
+.card{
+    padding: 10px 0 10px 0;
+    border: red;
+}
+/*body{*/
+/*    background-color: red;*/
+/*}*/

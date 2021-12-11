@@ -1,0 +1,38 @@
+<%- include('./partials/header') -%>
+
+<%- include('./partials/staffHeader')%>
+<%= details%>
+
+<form class="removeFromDb " action="/del" method="post">
+    <div class="title pageHeading">
+        <h3>Remove / Change member details</h3>
+    </div>
+
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="inputPosition">Position</label>
+            <select id="inputPosition" class="form-control" name="position">
+                <option selected>select position ...</option>
+                <option value="Student">Student</option>
+                <option value="Staff">Staff</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="rmbtn">
+        <button type="submit" class="btn btn-primary">Delete from db</button>
+    </div>
+</form>
+<%for (let i = 0 ; i < 9; i++){%>
+    <div class="space"></div>
+<%}%>
+
+<%- include('./partials/footer') -%>

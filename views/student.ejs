@@ -1,0 +1,20 @@
+<%- include('./partials/header') -%>
+
+<h3>
+    <%= tittle%>
+</h3>
+
+<div class="container card" style="width: 18rem;">
+
+    <%dbdata.forEach((item)=>{%>
+
+    <img onload="randomize()" class="card-img-top img-fluid rounded" src="/images/bluish5.jpeg">
+    <div class="card-body">
+        <h5 class="card-title"><%= item.name%></h5>
+        <p class="card-text"><%= item.email%></p>
+    </div>
+        <%})%>
+</div>
+
+
+<%- include('./partials/footer') -%>
