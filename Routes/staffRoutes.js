@@ -17,6 +17,16 @@ routes.post('/staff', (req, res)=>{
     const Email = req.body.email;
     const Password = req.body.password;
 
+    // const staffMember = staff({
+    //     name: Email,
+    //     password: Password,
+    //     position: "Staff"
+    //
+    // })
+    //
+    // staffMember.save()
+    // console.log(staffMember)
+
     staff.findOne({email: Email}, (err, staffDetails)=>{
         if(!err){
             if (!staffDetails){

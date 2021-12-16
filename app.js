@@ -1,3 +1,4 @@
+require('dotenv').config();
 //global modules
 const express = require('express');
 const ejs = require('ejs');
@@ -13,13 +14,14 @@ const addRoute = require('./Routes/addRoute');
 const delRoute = require('./Routes/delRoutes');
 const studentPortalRoute = require("./Routes/studentPortalRoute");
 let Data = [];
-require('dotenv').config();
+
 
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs');
-
-mongoose.connect('mongodb://localhost:27017/schoolDB');
+console.log(process.env.SECRET);
+//mongodb://localhost:27017/schoolDB
+mongoose.connect(`mongodb+srv://victron:${process.env.SECRET}@cluster0.ef346.mongodb.net/CURLYCPMPSDB?retryWrites=true&w=majority`);
 
 
 app.use(homeRoutes);
